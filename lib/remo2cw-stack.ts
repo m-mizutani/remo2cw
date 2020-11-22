@@ -56,7 +56,7 @@ export class Remo2CwStack extends cdk.Stack {
     });
 
     new events.Rule(this, 'periodicReaderInvocation', {
-      schedule: events.Schedule.cron({ minute: '1'}),
+      schedule: events.Schedule.rate(cdk.Duration.minutes(1)),
       targets: [new eventsTargets.LambdaFunction(this.reader)],
     });
 
