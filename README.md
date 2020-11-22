@@ -2,6 +2,8 @@
 
 CDK stack to put metrics of [Nature Remo](https://nature.global/) devices to Amazon CloudWatch Metrics by Lambda Function.
 
+![dashboard](https://user-images.githubusercontent.com/605953/99896375-6fc78380-2cd3-11eb-8e85-65cdb025dde2.png)
+
 ## Prerequisite
 
 - Tools
@@ -21,6 +23,10 @@ $ cd remo2cw
 $ export REMO_API_TOKEN=xxxxxxxxxxxxxxxxxxxxxx
 $ make deploy # with AWS credential
 ```
+
+## Author
+
+mizutani (mizutani@hey.com)
 
 ## License
 
