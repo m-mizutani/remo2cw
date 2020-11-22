@@ -1,14 +1,26 @@
-# Welcome to your CDK TypeScript project!
+# remo2cw
 
-This is a blank project for TypeScript development with CDK.
+CDK stack to put metrics of [Nature Remo](https://nature.global/) devices to Amazon CloudWatch Metrics by Lambda Function.
 
-The `cdk.json` file tells the CDK Toolkit how to execute your app.
+## Prerequisite
 
-## Useful commands
+- npm >= 6.14.7
+- aws-cdk >= 1.74.0
+- go >= 1.15
+- GNU make >= 3.81
 
- * `npm run build`   compile typescript to js
- * `npm run watch`   watch for changes and compile
- * `npm run test`    perform the jest unit tests
- * `cdk deploy`      deploy this stack to your default AWS account/region
- * `cdk diff`        compare deployed stack with current state
- * `cdk synth`       emits the synthesized CloudFormation template
+## Usage
+
+At first, take your API token from [Nature Remo site](https://home.nature.global/home).
+
+Then you can deploy CDK stack with 
+
+```sh
+$ git clone https://github.com/m-mizutani/remo2cw.git
+$ cd remo2cw
+$ make deploy
+```
+
+## License
+
+MIT Licence

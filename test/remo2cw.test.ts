@@ -1,3 +1,4 @@
+/*
 import { expect as expectCDK, matchTemplate, MatchStyle } from '@aws-cdk/assert';
 import * as cdk from '@aws-cdk/core';
 import * as Remo2Cw from '../lib/remo2cw-stack';
@@ -11,3 +12,4 @@ test('Empty Stack', () => {
       "Resources": {}
     }, MatchStyle.EXACT))
 });
+*/
