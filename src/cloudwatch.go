@@ -25,7 +25,7 @@ var parameters = []*remoParameter{
 		Name: "temperature",
 	},
 	{
-		Key:  "li",
+		Key:  "il",
 		Name: "illumination",
 	},
 	{
