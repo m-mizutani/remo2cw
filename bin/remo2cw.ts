@@ -3,8 +3,6 @@ import 'source-map-support/register';
 import * as cdk from '@aws-cdk/core';
 import { Remo2CwStack } from '../lib/remo2cw-stack';
 
-const deviceIDs : string = process.env.DEVICE_IDS!;
-
 const app = new cdk.App();
 new Remo2CwStack(app, 'Remo2CwStack', {
     remoAPItoken: process.env.REMO_API_TOKEN!,
