@@ -10,6 +10,7 @@ export interface property extends cdk.StackProps {
   remoAPItoken: string;
   metricsNamespace?: string;
   dashboardName?:string;
+  interval?: cdk.Duration;
 }
 
 interface remoMetric {
@@ -58,8 +59,9 @@ export class Remo2CwStack extends cdk.Stack {
       environment: envVars,
     });
 
+    const interval = props.interval || cdk.Duration.minutes(5);
     new events.Rule(this, 'periodicReaderInvocation', {
-      schedule: events.Schedule.rate(cdk.Duration.minutes(1)),
+      schedule: events.Schedule.rate(interval),
       targets: [new eventsTargets.LambdaFunction(this.reader)],
     });
 
